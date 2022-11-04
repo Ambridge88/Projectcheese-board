@@ -9,10 +9,12 @@ beforeAll(async () => {
 
 })
 
-test('a user has a name and email', async () => {
-    const user = await User.create({ email: 'test@test.com', name: 'Bob' })
-    expect(user.name).toBe('Bob')
-    expect(user.id).toBeTruthy()
+test('a user can have multipule boards', async () => {
+    const user = await User.create({ email: 'danielle@live.com', name: 'danielle' })
+    const board = await Board.create({type:'american cheeseboard', description: 'can hold a nice assortment of cheese and meats'})
+    const cheese = await Cheese.create({title: 'mozerella', desription: 'soft shiney and smooth in texture' })
+    expect(user.name).toBe('Danielle')
+    expect(user.title).toBeTruthy()
 })
 
 

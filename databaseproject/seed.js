@@ -28,22 +28,35 @@ async function seed() {
     await Cheese.bulkCreate([
         {
             title: 'mozzarella',
-            description: 'hello'
+            description: 'soft shiney and smooth in texture'
         },
         {
             title: 'feta',
-            description: 'hello'
+            description: 'is a brined curd white cheese made in Greece from sheep.'
         },
         {
             title: 'cheddar',
-            description: 'hello'
+            description: 'Cheddar originates from the English village of Cheddar in Somerset.'
         },
     ])
 
     await Board.bulkCreate([
-        {title:'hello',
-        description: 'helllloo',
-        rating: 7}
+        {
+            title:'American cheese board',
+            description: 'can hold a nice assortment of cheese and meats',
+            rating: 2
+        },
+        {
+            title:'English Cheese Board',
+            description: 'perfect for boxing day and beyond',
+            rating: 9
+        },
+        {
+            title: 'French Cheese Board',
+            description: 'bonjour',
+            rating: 10
+
+        }
 
 
     ])
