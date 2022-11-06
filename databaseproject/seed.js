@@ -9,7 +9,7 @@ async function seed() {
 
     await User.bulkCreate([
         {
-            name: 'danielle',
+            name: 'Danielle',
             email: 'danielle@live.com'
 
         },
@@ -18,7 +18,7 @@ async function seed() {
             email: 'ash@live.com'
         },
         {
-            name: 'rob',
+            name: 'Rob',
             email: 'rob@live.com'
         }
 
