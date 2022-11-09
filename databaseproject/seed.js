@@ -42,17 +42,17 @@ async function seed() {
 
     await Board.bulkCreate([
         {
-            title:'American cheese board',
+            title:'American board',
             description: 'can hold a nice assortment of cheese and meats',
             rating: 2
         },
         {
-            title:'English Cheese Board',
+            title:'English Board',
             description: 'perfect for boxing day and beyond',
             rating: 9
         },
         {
-            title: 'French Cheese Board',
+            title: 'French  Board',
             description: 'bonjour',
             rating: 10
 

@@ -1,8 +1,9 @@
 const { DataTypes, Model } = require('sequelize')
+// const Cheese = require('../modlesproject/cheese.js')
 const sequelize = require('./dbcb.js')
 
 
-class User extends Model { }
+class User extends Model {}
 
 User.init({
 
@@ -11,7 +12,8 @@ User.init({
     email: DataTypes.STRING
 
 
-}, { sequelize })
+},{ sequelize } )
+
 
 
 module.exports = User
